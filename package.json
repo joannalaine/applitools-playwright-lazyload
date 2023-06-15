@@ -1,0 +1,15 @@
+{
+  "name": "applitools-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-playwright": "^1.17.3",
+    "@playwright/test": "^1.35.1"
+  }
+}
