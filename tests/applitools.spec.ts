@@ -54,8 +54,7 @@ test.describe("Applitools Homepage", () => {
 
   test("view homepage", async ({ page }) => {
     await page.goto("https://applitools.com/");
-    // await eyes.check("Home page", Target.window().fully().layout()); // Captures screenshot
-    await eyes.check("Home page", Target.window().lazyLoad()); // Does not capture screenshot
+    await eyes.check("Home page", Target.window().fully().layout().lazyLoad());
   });
 
   test.afterEach(async () => {
